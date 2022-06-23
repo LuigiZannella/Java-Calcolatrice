@@ -1,6 +1,6 @@
 package javacalcolatrice;
 
-public class CalcoliHelper {
+public class CalcoliHelperDouble {
 	
 
 	 /*Consegna
@@ -14,18 +14,18 @@ public class CalcoliHelper {
 	 Create anche una classe CalcoliTest con il metodo main in cui testate tutti i metodi della vostra classe di helper (con un esempio per ogni casistica)
 	 */
 	
-	private CalcoliHelper() {
+	private CalcoliHelperDouble() {
 	}
 	// costruttore privato
 	// Somma di due numeri interi
-	public static int numberSomma (int primoAddendo,int secondoAddendo) {
+	public static double numberSomma (double primoAddendo,double secondoAddendo) {
 		return primoAddendo + secondoAddendo;
 	}
 	// Differenza tra 2 numeri interi
-	public static int numberDifferenza (int sottPrimo, int sottSecondo) {
+	public static double numberDifferenza (double sottPrimo, double sottSecondo) {
 		return sottPrimo - sottSecondo;
 	}
-	public static int numberDifferenza2 (int sottTerzo, int sottQuarto) {
+	public static double numberDifferenza2 (double sottTerzo, double sottQuarto) {
 		if (sottTerzo < sottQuarto) {
 			return sottTerzo - sottQuarto;
 			}
@@ -34,11 +34,11 @@ public class CalcoliHelper {
 		}
 	}
 	// Moltiplicazione 2 interi
-	public static int numberMoltiplicazione (int moltUno, int moltDue) {
+	public static double numberMoltiplicazione (double moltUno, double moltDue) {
 		return moltUno * moltDue;
 	}
 	// Numeri Assoluti
-	public static int absoluteValue (int primoAss) {
+	public static double absoluteValue (double primoAss) {
 		
 		if (primoAss < 0) {
 			primoAss = -primoAss;
@@ -47,9 +47,9 @@ public class CalcoliHelper {
 		}
 
 	
-	public static int minValore (int primoNumero , int secondoNumero) {
+	public static double minValore (double primoNumero , double secondoNumero) {
 		
-		int minimoValore;
+		double minimoValore;
 		
 		if (primoNumero < secondoNumero) {
 			minimoValore = primoNumero;
@@ -61,9 +61,9 @@ public class CalcoliHelper {
 	}
 	
 	
-    public static int maxValore (int primoNumero , int secondoNumero) {
+    public static double maxValore (double primoNumero , double secondoNumero) {
 		
-		int massimoValore;
+    	double massimoValore;
 		
 		if (primoNumero > secondoNumero) {
 			massimoValore = primoNumero;
